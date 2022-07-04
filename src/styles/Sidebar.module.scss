@@ -1,0 +1,15 @@
+.sidebarWrapper {
+    position: relative;
+    z-index: 2;
+    background-color: #091336;
+    width: 240px;
+    min-height: 100vh;
+}
+
+.sidebarLogo {
+    box-sizing: content-box;
+    width: 109px;
+    height: 28px;
+    margin-bottom: 32px;
+    padding: 12px 0 0 20px;
+}

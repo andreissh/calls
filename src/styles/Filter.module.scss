@@ -1,0 +1,56 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+    padding: 14px 0;
+}
+
+.callsSearchbarWrapper {
+    position: relative;
+    width: 482px;
+}
+
+.callsSearchbar {
+    width: 100%;
+    padding: 10px 36px 10px 46px;
+    background: none;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        font-family: "SF Pro";
+        font-size: 14px;
+        line-height: 20px;
+        color: #5e7793;
+    }
+}
+
+.searchIcon {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    background: url("../assets/images/icon-search.svg") no-repeat;
+}
+
+.filterSelect {
+    margin-right: 32px;
+    padding-right: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    font-family: "SF Pro";
+    font-size: 14px;
+    line-height: 21px;
+    color: #5e7793;
+    opacity: 0.87;
+    background: url("../assets/images/arrow-down.svg") no-repeat right;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

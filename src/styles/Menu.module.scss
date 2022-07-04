@@ -1,0 +1,128 @@
+.listReset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu {
+    margin-bottom: 64px;
+}
+
+.menuItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 14px 48px;
+    font-family: "SF Pro M";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 12px;
+    }
+}
+
+.results {
+    &::before {
+        background: url(../assets/images/sb-results.svg);
+        width: 22px;
+        height: 12px;
+    }
+}
+
+.orders {
+    &::before {
+        background: url(../assets/images/sb-orders.svg);
+        width: 24px;
+        height: 14px;
+    }
+}
+
+.messages {
+    &::before {
+        background: url(../assets/images/sb-messages.svg);
+        width: 20px;
+        height: 16px;
+    }
+}
+
+.calls {
+    &::before {
+        background: url(../assets/images/sb-calls.svg);
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.counterparties {
+    &::before {
+        background: url(../assets/images/sb-counterparties.svg);
+        width: 20px;
+        height: 14px;
+    }
+}
+
+.docs {
+    &::before {
+        background: url(../assets/images/sb-docs.svg);
+        width: 16px;
+        height: 20px;
+    }
+}
+
+.contractors {
+    &::before {
+        background: url(../assets/images/sb-contractors.svg);
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.reports {
+    &::before {
+        background: url(../assets/images/sb-reports.svg);
+        width: 20px;
+        height: 19px;
+    }
+}
+
+.base {
+    &::before {
+        background: url(../assets/images/sb-base.svg);
+        width: 18px;
+        height: 22px;
+    }
+}
+
+.settings {
+    &::before {
+        background: url(../assets/images/sb-settings.svg);
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.active {
+    position: relative;
+    border-left: 3px solid #005ff8;
+    background-color: rgba(216, 228, 251, 0.32);
+    opacity: 1;
+
+    &::after {
+        position: absolute;
+        content: "";
+        right: 12px;
+        top: 22px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #ffd500;
+        box-shadow: 0px 3px 8px rgba(237, 218, 1, 0.5);
+    }
+}

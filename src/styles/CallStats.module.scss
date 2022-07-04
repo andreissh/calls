@@ -1,0 +1,48 @@
+.listReset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.calls {
+    display: flex;
+    margin-right: 197px;
+}
+
+.callsItem {
+    margin-right: 56px;
+    min-width: 164px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.callsItemText {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-family: "SF Pro";
+    font-size: 14px;
+    line-height: 21px;
+    color: #122945;
+
+    &Green {
+        color: #28a879;
+    }
+
+    &Yellow {
+        color: #ffd500;
+    }
+
+    &Red {
+        color: #ea1a4f;
+    }
+}
+
+.callsItemIndicator {
+    display: block;
+    width: 156px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: #dee6f5;
+}

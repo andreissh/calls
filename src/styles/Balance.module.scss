@@ -1,0 +1,67 @@
+.balanceBlock {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.balanceText {
+    margin-right: 10px;
+    color: #899cb1;
+    font-family: "SF Pro";
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.balanceNum {
+    color: #122945;
+}
+
+.balanceAdd {
+    fill: #002cfb;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+}
+
+.arrowLeft {
+    width: 7px;
+    height: 10px;
+    margin-right: 20px;
+    background: url("../assets/images/arrow-left.svg") no-repeat;
+}
+
+.arrowRight {
+    width: 7px;
+    height: 10px;
+    margin-left: 15px;
+    background: url("../assets/images/arrow-left.svg") no-repeat;
+    transform: rotate(180deg);
+}
+
+.calendarIcon {
+    margin-right: 8px;
+}
+
+.calendarText {
+    font-family: "SF Pro";
+    font-size: 14px;
+    line-height: 16px;
+    color: #005ff8;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+}
