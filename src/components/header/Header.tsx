@@ -10,11 +10,15 @@ const Header = () => {
         <div className={styles.headerWrapper}>
             <span className={styles.date}>Среда, 13 окт</span>
             <CallStats />
-            <img className={styles.searchbar} src={search} alt=""></img>
+            <div className={styles.callsSearchbarWrapper}>
+                <input className={styles.callsSearchbar} type="search"></input>
+                <span className={styles.searchIcon}></span>
+            </div>
             <select className={styles.organizations}>
-                <option value="1">ИП Сидорова Александра Михайловна</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
+                <option>Все организации</option>
+                <option selected>ИП Сидорова Александра Михайловна</option>
+                <option>ИП Митрофанов М.М.</option>
+                <option>ИП Иванов М.М.</option>
             </select>
             <div className={styles.profile}>
                 <img className={styles.profilePic} src={pic} alt=""></img>

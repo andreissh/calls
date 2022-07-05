@@ -6,7 +6,6 @@
 
 .calls {
     display: flex;
-    margin-right: 197px;
 }
 
 .callsItem {
@@ -40,9 +39,52 @@
 }
 
 .callsItemIndicator {
+    position: relative;
     display: block;
     width: 156px;
     height: 6px;
     border-radius: 12px;
     background-color: #dee6f5;
+
+    &Green {
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 104px;
+            height: 6px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            background-color: #28a879;
+        }
+    }
+
+    &Yellow {
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 62px;
+            height: 6px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            background-color: #ffd500;
+        }
+    }
+
+    &Red {
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 104px;
+            height: 6px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            background-color: #ea1a4f;
+        }
+    }
 }

@@ -7,19 +7,19 @@ const CallStats = () => {
                 <span className={styles.callsItemText}>
                     Новые звонки <span className={styles.callsItemTextGreen}>20 из 30 шт</span>
                 </span>
-                <span className={styles.callsItemIndicator}></span>
+                <span className={`${styles.callsItemIndicator} ${styles.callsItemIndicatorGreen}`}></span>
             </li>
             <li className={styles.callsItem}>
                 <span className={styles.callsItemText}>
                     Качество разговоров <span className={styles.callsItemTextYellow}>40%</span>
                 </span>
-                <span className={styles.callsItemIndicator}></span>
+                <span className={`${styles.callsItemIndicator} ${styles.callsItemIndicatorYellow}`}></span>
             </li>
             <li className={styles.callsItem}>
                 <span className={styles.callsItemText}>
                     Конверсия в заказ <span className={styles.callsItemTextRed}>67%</span>
                 </span>
-                <span className={styles.callsItemIndicator}></span>
+                <span className={`${styles.callsItemIndicator} ${styles.callsItemIndicatorRed}`}></span>
             </li>
         </ul>
     );

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { getCallData } from "../../redux/selectors/getCallData";
 import styles from "../../styles/Table.module.scss";
+import { CallsArrow } from "../svgs/CallsArrow";
 
 const Table = () => {
     const callData = useSelector(getCallData);
@@ -23,8 +24,16 @@ const Table = () => {
                     {callData.map((call: any) => {
                         return (
                             <tr className={styles.tableRow} key={call.id}>
-                                <td className={styles.tableCell}>{call.in_out}</td>
-                                <td className={styles.tableCell}>{call.date}</td>
+                                <td className={styles.tableCell}>
+                                    {call.in_out === 0 ? (
+                                        <CallsArrow className={styles.arrowOut} />
+                                    ) : call.in_out === 1 ? (
+                                        <CallsArrow className={styles.arrowIn} />
+                                    ) : (
+                                        <CallsArrow className={styles.arrowRest} />
+                                    )}
+                                </td>
+                                <td className={styles.tableCell}>{call.date.slice(-8, -3)}</td>
                                 <td className={styles.tableCell}>
                                     <img src={call.person_avatar} alt=""></img>
                                 </td>
